@@ -313,14 +313,14 @@
         
             <a class="post-title-link" href="/2019/05/21/My-First-Post/" itemprop="url">
               
-                <span itemprop="name">第一篇Post试试</span>
+                <span itemprop="name">第一次尝试</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-21T19:01:01+08:00" content="2019-05-21">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-21T21:52:01+08:00" content="2019-05-21">
           05-21
         </time>
       </div>
@@ -434,11 +434,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
@@ -626,21 +622,4 @@
   
 
 </body>
-
-<script>
-	
-	window.onload = function(){
-		var path = 'https://leeziming.github.io'; //这里要改成你博客的地址
-		var localhostItem = String(window.location).split(path)[1];
-		var LiNode = document.querySelectorAll('#menu > li > a')
-		
-		for(var i = 0; i< LiNode.length;i++){
-			var item = String(LiNode[i].href).split(path)[1];
-			if(item == localhostItem && item != undefined){
-				LiNode[i].setAttribute('style','border-bottom:1px solid black');
-			}
-		}
-	};
-
-</script>
 </html>

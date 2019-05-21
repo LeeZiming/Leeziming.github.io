@@ -308,7 +308,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/21/My-First-Post/" itemprop="url">第一篇Post试试</a></h1>
+                <a class="post-title-link" href="/2019/05/21/My-First-Post/" itemprop="url">第一次尝试</a></h1>
         
 
         <div class="post-meta">
@@ -320,7 +320,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-21T19:01:01+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-21T21:52:01+08:00">
                 2019-05-21
               </time>
             
@@ -360,7 +360,8 @@
       
         
           
-            
+            <p>​    这是部署Hexo之后上传的第一篇文章，试试水，以后逐步完善。</p>
+
           
         
       
@@ -492,11 +493,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
@@ -684,21 +681,4 @@
   
 
 </body>
-
-<script>
-	
-	window.onload = function(){
-		var path = 'https://leeziming.github.io'; //这里要改成你博客的地址
-		var localhostItem = String(window.location).split(path)[1];
-		var LiNode = document.querySelectorAll('#menu > li > a')
-		
-		for(var i = 0; i< LiNode.length;i++){
-			var item = String(LiNode[i].href).split(path)[1];
-			if(item == localhostItem && item != undefined){
-				LiNode[i].setAttribute('style','border-bottom:1px solid black');
-			}
-		}
-	};
-
-</script>
 </html>
