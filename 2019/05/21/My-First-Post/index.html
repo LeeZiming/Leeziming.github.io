@@ -19,10 +19,14 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -60,13 +64,13 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-boy.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-boy.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-boy.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -362,7 +366,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -377,9 +381,35 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/QR-Code.png" alt="Lee Ziming wechat" style="width: 200px; max-width: 100%;">
+    <div>如有问题，请微信联系我～</div>
+</div>
+
+      </div>
+    
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Lee Ziming
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://leeziming.github.io/2019/05/21/My-First-Post/" title="第一次尝试">https://leeziming.github.io/2019/05/21/My-First-Post/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -535,8 +565,6 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
 
 
 
@@ -559,6 +587,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1018,6 +1052,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   

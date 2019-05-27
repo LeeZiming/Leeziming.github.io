@@ -19,10 +19,14 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -60,13 +64,13 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-boy.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-boy.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-boy.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -438,8 +442,6 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
 
 
 
@@ -462,6 +464,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -917,6 +925,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
