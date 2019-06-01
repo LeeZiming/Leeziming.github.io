@@ -100,7 +100,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g3dgyf01e5j31hc0u0x6r.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g3dgyttijnj31900u0hdw.jpg">
-<meta property="og:updated_time" content="2019-05-27T13:42:06.409Z">
+<meta property="og:updated_time" content="2019-06-01T14:20:54.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="随笔">
 <meta name="twitter:description" content="Hexo升级到6.0之后，比中文文档里的说明可复杂太多了，先试试在Markdown里添加一张图片试试。">
@@ -352,6 +352,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/25/Jottings/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/25/Jottings/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -474,6 +484,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -733,6 +746,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'PUFj60Nir9PmqTEQjfsRs4Bw-9Nh9j0Va',
+        appKey: 'E4fpKF45Kb6KClbn9JRFVtEy',
+        placeholder: '你真的可以在这里留下评论(´･_･`)',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
